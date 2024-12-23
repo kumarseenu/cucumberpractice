@@ -1,0 +1,5 @@
+stepDefinitions/AppLoginSteps.class
+stepDefinitions/LoginSteps.class
+stepDefinitions/ApiStepDefinitions.class
+stepDefinitions/Hooks.class
+runners/TestRunner.class
