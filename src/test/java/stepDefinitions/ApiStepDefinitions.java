@@ -28,6 +28,7 @@ public class ApiStepDefinitions {
     public void verifyStatusCode(int expectedStatusCode) {
         // Assert the status code
         assertEquals(expectedStatusCode, response.getStatusCode());
+        assertEquals(1,2);
     }
 
     @Then("the response should contain {string} and {string}")
