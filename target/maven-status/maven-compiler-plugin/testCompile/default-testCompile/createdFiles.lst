@@ -1,3 +1,4 @@
+utility/TestContextUI.class
 stepDefinitions/AppLoginSteps.class
 stepDefinitions/LoginSteps.class
 stepDefinitions/ApiStepDefinitions.class

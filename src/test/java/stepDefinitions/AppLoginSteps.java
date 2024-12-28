@@ -3,12 +3,19 @@ package stepDefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import utility.TestContextUI;
 
 public class AppLoginSteps {
+
+    TestContextUI testContextUI;
+    public AppLoginSteps(TestContextUI testContextUI){
+        this.testContextUI = testContextUI;
+    }
 
     @When("the user enters a valid email and password")
     public void the_user_enters_a_valid_email_and_password() {
         System.out.println("the user enters a valid email and password");
+        testContextUI.getDriver().quit();
     }
 
     @And("the user clicks on login button")

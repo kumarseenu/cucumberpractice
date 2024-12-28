@@ -1,3 +1,4 @@
+@UI
 Feature: Login functionality
   @Sanity
   Scenario Outline: User logs in with valid credentials
