@@ -6,6 +6,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.BeforeStep;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.safari.SafariDriver;
 import utility.TestContextUI;
 
