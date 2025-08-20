@@ -22,8 +22,15 @@ public class Hooks {
         // Perform setup tasks here (e.g., open a browser, set up a database, etc.)
         //WebDriver driver = new SafariDriver();
         // execute in Chrome Driver - in MAC
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless=new"); // Use headless mode (for Chrome 109+ use --headless=new)
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+// Generate a unique user-data-dir for each session
+        options.addArguments("--user-data-dir=/tmp/chrome-user-data-" + System.currentTimeMillis());
+
         System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new ChromeDriver(options);
 
         // execute in Chrome Driver - in Window
 //        System.setProperty("webdriver.chrome.driver", "ChromeDriver/chromedriver");
